@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int x = 9;
-    int y = 11;
+    int y = 1;
 
     if (x < 10)
         if(y > 10)

@@ -12,10 +12,10 @@ int main()
     {
         if(y > 10)
             cout << "*******" <<endl;
+        else
+        {
+            cout << "######" <<endl;
+        }
     }
-    else
-    {
-        cout << "######" <<endl;
         cout << "$$$$$$";
-    }
 }
