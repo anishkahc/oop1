@@ -10,7 +10,7 @@ int main()
     cout << "Enter base number: ";
     cin >> base;
 
-    cout << "Enter power number(positive integer): ";
+    cout << "Enter power: ";
     cin >> power;
 
     result = calcPwr(base, power);
@@ -21,8 +21,8 @@ int main()
 
 int calcPwr(int b, int p)
 {
-    while(p != 0){
-        cout << p << endl;
+    while(p > 1){
+        cout << b << "^" << p << endl;
         return ( b * calcPwr(b, p-1));
     }
 }

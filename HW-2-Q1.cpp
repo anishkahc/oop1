@@ -1,23 +1,25 @@
 #include <iostream>
-
 using namespace std;
+
 int main(){
-   //This initializes the value of pi to 0
-   double pi = 0; int i =0;
-   //This iterates from 1 to 200000
-   while (i < 5000 || pi <= 3.14159){
-       //The following conditions determine the value of pi
+   
+   double pi = 0.0; int i;
+   
+   for (i=0; i < 200000; i++){
+       
        if(i%2==0){
            pi+=4.0/(1.0+2.0*i);
+           //cout << pi << " at " << i << endl;
        }
        else{
            pi-=4.0/(1.0+2.0*i);
+           //cout << pi << " at " << i << endl;
        }
-        i++;
+       if(pi >= 3.14159 && pi < 3.14160)
+       {
+            cout << pi << " at " << i+1 << endl;
+            break;
+       }
     }
-        
-   //This prints the value of pi
-   cout<<pi << endl;
-   cout<< i << endl;
    return 0;
 }

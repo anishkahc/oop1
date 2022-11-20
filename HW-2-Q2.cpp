@@ -24,10 +24,10 @@ int main(){
          rev = (rev * 10) + digit;
          num = num / 10;
      } while (num != 0);
-     cout << " The reverse of the number is: " << rev << endl;
+     cout << "Reverse number: " << rev << endl;
      if (n == rev)
-         cout << " The number is a palindrome.";
+         cout << "Palindrome number.";
      else
-         cout << " The number is not a palindrome.";
+         cout << "Not a palindrome number.";
     return 0;
 }
