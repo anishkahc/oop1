@@ -27,7 +27,7 @@ int main(){
 
     for(int i=0; i < arraySize; i++){
         if(prime[i] == 1){
-            cout << i << endl;
+            cout << i << " ";
         }
     }
 }
