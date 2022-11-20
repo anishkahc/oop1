@@ -9,15 +9,13 @@ int main(){
        
        if(i%2==0){
            pi+=4.0/(1.0+2.0*i);
-           //cout << pi << " at " << i << endl;
        }
        else{
            pi-=4.0/(1.0+2.0*i);
-           //cout << pi << " at " << i << endl;
        }
        if(pi >= 3.14159 && pi < 3.14160)
        {
-            cout << pi << " at " << i+1 << endl;
+            cout << pi << " is the pi value at " << i+1 << " iteration" << endl;
             break;
        }
     }

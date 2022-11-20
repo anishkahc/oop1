@@ -22,7 +22,7 @@ int main()
 int calcPwr(int b, int p)
 {
     while(p > 1){
-        cout << b << "^" << p << endl;
+        //cout << b << "^" << p << endl;
         return ( b * calcPwr(b, p-1));
     }
 }
