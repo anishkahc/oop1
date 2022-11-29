@@ -15,5 +15,4 @@ int main() {
    c = a.subtract(b); // invoke add function and assign to object c
    cout << a.toString() << " - " << b.toString() << " = " << c.toString() << '\n';
    cout << endl;
-} 
-'/;'
+} ;

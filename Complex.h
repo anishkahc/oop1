@@ -1,48 +1,43 @@
 using namespace std;
-
+#include <string>
+#include <iostream> 
 class Complex{
  private:
  double realPart;
  double imaginaryPart;
-
  public:
- //constructor for initial value assignment
+ //assignment
  Complex(int realPart=1, int imaginaryPart=1){
  this->realPart = realPart;
  this->imaginaryPart = imaginaryPart;
  }
- //add function
- Complex add(Complex obj1){
- Complex z;
- z.realPart = realPart + obj1.realPart;
- z.imaginaryPart = imaginaryPart + obj1.imaginaryPart;
-
- return z;
+ //add 
+ Complex add(Complex object1){
+ Complex imaginary;
+ imaginary.realPart = realPart + object1.realPart;
+ imaginary.imaginaryPart = imaginaryPart + object1.imaginaryPart;
+ return imaginary;
  }
- //subtract function
- Complex subtract(Complex obj1){
- Complex z;
- z.realPart = realPart - obj1.realPart;
- z.imaginaryPart = imaginaryPart - obj1.imaginaryPart;
-
- return z;
+ //subtract
+ Complex subtract(Complex object1){
+ Complex imaginary;
+ imaginary.realPart = realPart - object1.realPart;
+ imaginary.imaginaryPart = imaginaryPart - object1.imaginaryPart;
+ return imaginary;
  }
-
- //function to convert to string
+ //convert to string
  string toString(){
- string z;
+ string imaginary;
  if(imaginaryPart<0)
- z = to_string(realPart) + to_string(imaginaryPart) + "*i";
+ imaginary = to_string(realPart) + to_string(imaginaryPart) + "*i";
  else
- z = to_string(realPart)+ "+" + to_string(imaginaryPart) + "*i";
- return z;
+ imaginary = to_string(realPart)+ "+" + to_string(imaginaryPart) + "*i";
+ return imaginary;
  }
-
- //function to set complex numbers
+ //set complex numbers
  void setComplexNumber(int realPart, int imaginaryPart){
  this->realPart = realPart;
  this->imaginaryPart = imaginaryPart;
  }
-
 
 };
